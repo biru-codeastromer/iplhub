@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - IPL HUB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Sora', sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298); /* Darker gradient */
+      color: #fff; /* White text for better contrast */
+    }
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(120deg, #002f4b, #005b79, #008aa7, #00b4d8);
+
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .navbar-links a {
+      text-decoration: none;
+      color: white;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+    .contact-section {
+      padding: 3rem 1rem;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7); /* Darker background with transparency */
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      margin: 3rem 1rem;
+    }
+    .contact-section h1 {
+      color: aqua; /* Bright color for title */
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+    .contact-section p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+      color: #ddd; /* Light grey text for better readability */
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+      background: #002f4b; /* Dark form background */
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .contact-form label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color:aquamarine; /* Bright color for labels */
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #555;
+      border-radius: 5px;
+      font-size: 1rem;
+      background-color: #444; /* Dark input background */
+      color: #fff;
+    }
+    .contact-form button {
+      background-color: aqua; /* Bright button */
+      color: #0047ab;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #0047ab;
+      color: aquamarine;
+    }
+    footer {
+        background: linear-gradient(120deg, #002f4b, #005b79, #008aa7, #00b4d8);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .contact-section p.fun-line {
+      font-style: italic;
+      font-size: 1.2rem;
+      color:cyan; /* Fun orange color */
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar-container">
+    <div class="navbar-logo">
+        <img src="images/tata-ipl-seeklogo.png" alt="IPL HUB Logo" style="width: 40px;" />
+        <span style="font-size: 1.5rem; font-weight: bold;">IPL HUB</span>
+    </div>
+    <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#teams">Teams</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Let's Chat! 💬</h1>
+    <p>Got questions? Feedback? Or just wanna talk IPL? We’re all ears! 🎧</p>
+    <p class="fun-line">Don’t be shy—drop us a message, and let’s make magic happen! ✨</p>
+    <form class="contact-form">
+      <label for="name">Your Name (AKA Superstar Fan 🌟)</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      
+      <label for="email">Your Email (So we can send you all the IPL updates 📧)</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      
+      <label for="message">Your Message (Spill the beans 🗣️)</label>
+      <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+      
+      <button type="submit">Send Message 🚀</button>
+    </form>
+    <p class="fun-line">We can't wait to hear from you! 📣</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 IPL HUB | All Rights Reserved</p>
+    <p style="padding: 10px;font-size: larger;">🪄Made with 🤙🏻josh by <span style="font-weight: bold;">Birajit</span></p>
+  </footer>
+</body>
+</html>

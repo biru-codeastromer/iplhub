@@ -1,0 +1,18 @@
+// teams.json
+[
+    {
+        "name": "Chennai Super Kings",
+        "captain": "MS Dhoni",
+        "coach": "Stephen Fleming"
+    },
+    {
+        "name": "Mumbai Indians",
+        "captain": "Rohit Sharma",
+        "coach": "Mahela Jayawardene"
+    },
+    {
+        "name": "Royal Challengers Bangalore",
+        "captain": "Faf du Plessis",
+        "coach": "Sanjay Bangar"
+    }
+]

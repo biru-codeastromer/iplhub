@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gujarat Titans - IPL 2025</title>
+  <style>
+    /* Same styles as in the previous template, but modify title and other team details accordingly. */
+    body {
+      font-family: 'Sora', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #002f4b, #005b79, #008aa7, #00b4d8);
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    header img {
+      width: 120px;
+    }
+
+    header .official-site {
+      background: #008aa7;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    header .official-site:hover {
+      background: #00b4d8;
+    }
+
+    /* Sticky Menu */
+    .sticky-menu {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem;
+    }
+
+    .sticky-menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .sticky-menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* Players Section */
+    #search-bar {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    #search-bar input {
+      width: 80%;
+      padding: 0.8rem;
+      font-size: 1.2rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin: 1rem auto;
+    }
+
+    table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    th, td {
+      border: 1px solid #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    th {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .hidden-rows {
+      display: none;
+    }
+
+    #show-all {
+      display: block;
+      margin: 1rem auto;
+      padding: 1rem 2rem;
+      background: #008aa7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    #show-all:hover {
+      background: #00b4d8;
+    }
+  /* Achievements */
+  .achievements {
+    padding: 3rem;
+  }
+
+  .achievement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+    font-size: 1.5rem; /* Increased font size */
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Trivia Section */
+  .trivia {
+    padding: 3rem;
+  }
+
+  .trivia ul {
+    list-style: square;
+    padding-left: 2rem;
+  }
+
+  .trivia li {
+    margin: 1rem 0;
+  }
+
+  /* Gallery Section */
+  .gallery {
+    padding: 3rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .gallery-item {
+    position: relative;
+    text-align: center;
+  }
+
+  .gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .download-btn {
+    background: #005b79;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    font-size: 1.2rem; /* Increased font size */
+  }
+
+  .download-btn:hover {
+    background: #008aa7;
+  }
+
+  /* Fan Engagement Section */
+  .fan-engagement {
+    padding: 3rem;
+  }
+
+  .fan-engagement textarea {
+    width: 90%;
+    height: 120px;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem; /* Increased font size */
+  }
+
+  .fan-engagement button {
+    margin-top: 1.5rem;
+    background: #008aa7;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Increased font size */
+  }
+
+  .fan-engagement button:hover {
+    background: #00b4d8;
+  }
+
+  .back-button {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 3rem;
+    background: #005b79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size */
+  }
+
+  .back-button:hover {
+    background: #008aa7;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 2rem;
+      background: rgba(0, 0, 0, 0.8);
+      margin-top: 3rem;
+    }
+
+    .faq-question {
+      cursor: pointer;
+      background: #005b79;
+      color: white;
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      text-align: left;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <img src="images/gt-logo.png" alt="GT Logo">
+    <h1>Gujarat Titans</h1>
+    <p>A team full of power and aggression.</p>
+    <div id="countdown">Time left for IPL 2025: <span id="timer"></span></div>
+    <button class="official-site" onclick="window.open('https://www.gtitans.com', '_blank')">Visit Official Website</button>
+  </header>
+
+  <!-- Sticky Menu -->
+  <div class="sticky-menu">
+    <a href="#players-list">Players</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#faq">FAQ</a>
+    <a href="#fan-engagement">Fan Messages</a>
+  </div>
+
+  <!-- Players Section -->
+  <section id="players-list" class="players-list">
+    <h2>GT Players - IPL 2025</h2>
+    <div id="search-bar">
+      <input type="text" id="search" placeholder="Search for players...">
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Player Name</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hardik Pandya</td>
+          <td>All-Rounder</td>
+        </tr>
+        <tr>
+          <td>Rashid Khan</td>
+          <td>Bowler</td>
+        </tr>
+        <tr>
+          <td>Shubman Gill</td>
+          <td>Batsman</td>
+        </tr>
+        <tr class="hidden-rows">
+          <td>Lockie Ferguson</td>
+          <td>Bowler</td>
+        </tr>
+        <!-- Add more hidden players -->
+      </tbody>
+    </table>
+    <button id="show-all">Show Full List</button>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements">
+    <h2>Biggest Achievements</h2>
+    <div class="achievement-cards">
+      <div class="card">
+        <h3>Debut Year Glory</h3>
+        <p>GT made a mark in their debut year by winning the IPL title in 2022.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trivia Section -->
+  <section id="trivia" class="trivia">
+    <h2>Fun Trivia</h2>
+    <ul>
+      <li>GT won the IPL title in their first season.</li>
+      <li>Hardik Pandya is a key player and captain for the team.</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/gt-team.jpg" alt="GT Team">
+        <button class="download-btn" onclick="downloadImage('images/gt-team.jpg')">Download</button>
+      </div>
+      <div class="gallery-item">
+        <img src="images/hardik.jpg" alt="Hardik Pandya">
+        <button class="download-btn" onclick="downloadImage('images/hardik.jpg')">Download</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fan Engagement Section -->
+  <section id="fan-engagement" class="fan-engagement">
+    <h2>Leave a Message for GT!</h2>
+    <textarea placeholder="Enter your message here"></textarea>
+    <button>Submit</button>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <h2>FAQ</h2>
+    <button class="faq-question">What is GT's home stadium?</button>
+    <div class="faq-answer">GT's home stadium is the Narendra Modi Stadium in Ahmedabad.</div>
+
+    <button class="faq-question">Who is the current captain of GT?</button>
+    <div class="faq-answer">The current captain of GT is Hardik Pandya.</div>
+  </section>
+
+  <!-- Go Back Button -->
+  <button class="back-button" onclick="window.location.href='index.html#teams'">Go Back</button>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Gujarat Titans | All rights reserved.</p>
+    <p style="padding: 10px;font-size: larger;">🪄Made with 🤙🏻josh by <span style="font-weight: bold;">Birajit</span></p>
+  </footer>
+
+  <script>
+    const timerElement = document.getElementById('timer');
+    const targetDate = new Date('2025-04-01T00:00:00').getTime();
+    setInterval(function () {
+      const now = new Date().getTime();
+      const timeLeft = targetDate - now;
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+      timerElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+  </script>
+</body>
+</html>

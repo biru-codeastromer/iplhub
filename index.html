@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPL HUB - Your Cricket Gateway</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar-container">
+    <div class="navbar-logo">
+        <img src="images/tata-ipl-seeklogo.png" alt="IPL HUB Logo" />
+        <span>IPL HUB</span>
+    </div>
+    <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="#teams">Teams</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="navbar-actions">
+        <a href="#login" class="login">Log In</a>
+        <a href="#signup" class="signup">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to IPL HUB</h1>
+      <p>Your one-stop destination for all things IPL.</p>
+      <a href="#teams" class="cta-btn">Explore Teams</a>
+    </div>
+  </section>
+
+  <!-- Teams Section -->
+  <section id="teams" class="teams-section">
+    <h2>Select Your Favorite Team</h2>
+    <div class="teams-container">
+      <!-- Chennai Super Kings -->
+      <div class="team-card" data-team="CSK" style="background-color: lightyellow;">
+        <img src="images/627d07ea8a632ca996477e81.png" alt="CSK Logo" class="team-logo">
+        <h3>Chennai Super Kings</h3>
+        <p>5 times champions,the most consistent team of IPL.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.19.49 PM.png" alt="Ruturaj Gaikwad" class="player-image">
+        <button onclick="window.location.href='csk.html'">View Team</button>
+      </div>
+    
+      <!-- Mumbai Indians -->
+      <div class="team-card" data-team="MI" style="background-color: lightblue;">
+        <img src="images/627d0d098a632ca996477e99.png" alt="MI Logo" class="team-logo">
+        <h3>Mumbai Indians</h3>
+        <p>The joint-most successful IPL team with 5 championships.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.23.39 PM.png" alt="Jasprit Bumrah" class="player-image">
+        <button onclick="window.location.href='mi.html'">View Team</button>
+      </div>
+    
+      <!-- Kolkata Knight Riders -->
+      <div class="team-card" data-team="KKR" style="background-color:violet;">
+        <img src="images/627d0b388a632ca996477e91.png" alt="KKR Logo" class="team-logo">
+        <h3>Kolkata Knight Riders</h3>
+        <p>Known for thrilling finishes and aggressive players.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.21.56 PM.png" alt="Andre Russell" class="player-image">
+        <button onclick="window.location.href='kkr.html'">View Team</button>
+      </div>
+    
+      <!-- Sunrisers Hyderabad -->
+      <div class="team-card" data-team="SRH" style="background-color: lightsalmon;">
+        <img src="images/Sunrisers Hyderabad.png" alt="SRH Logo" class="team-logo">
+        <h3>Sunrisers Hyderabad</h3>
+        <p>Champions in 2016, with explosive batting lineups.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.25.38 PM 1.png" alt="Heinrich Klassen" class="player-image">
+        <button onclick="window.location.href='srh.html'">View Team</button>
+      </div>
+    
+      <!-- Rajasthan Royals -->
+      <div class="team-card" data-team="RR" style="background-color: lightpink;">
+        <img src="images/627d0ef08a632ca996477ea4.png" alt="RR Logo" class="team-logo">
+        <h3>Rajasthan Royals</h3>
+        <p>Inaugural IPL champions known for their resilience.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.24.35 PM.png" alt="Sanju Samson" class="player-image">
+        <button onclick="window.location.href='rr.html'">View Team</button>
+      </div>
+    
+      <!-- Gujarat Titans -->
+      <div class="team-card" data-team="GT" style="background-color:cornflowerblue;">
+        <img src="images/Gujarat Titans.png" alt="GT Logo" class="team-logo">
+        <h3>Gujarat Titans</h3>
+        <p>The newest team making a mark with star players.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.21.24 PM.png" alt="Shubman Gill" class="player-image">
+        <button onclick="window.location.href='gt.html'">View Team</button>
+      </div>
+    
+      <!-- Royal Challengers Bangalore -->
+      <div class="team-card" data-team="RCB" style="background-color:rgb(236, 113, 138);">
+        <img src="images/627d103c8a632ca996477eaa.png" alt="RCB Logo" class="team-logo">
+        <h3>Royal Challengers Bangalore</h3>
+        <p>Popular for their star-studded lineup, led by Virat Kohli.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.25.06 PM.png" alt="Virat Kohli" class="player-image">
+        <button onclick="window.location.href='rcb.html'">View Team</button>
+      </div>
+    
+      <!-- Delhi Capitals -->
+      <div class="team-card" data-team="DC" style="background-color: rgb(115, 169, 208);">
+        <img src="images/Delhi Capitals.png" alt="DC Logo" class="team-logo">
+        <h3>Delhi Capitals</h3>
+        <p>Emerging contenders with a young and dynamic squad.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.20.49 PM.png" alt="Rishabh Pant" class="player-image">
+        <button onclick="window.location.href='dc.html'">View Team</button>
+      </div>
+    
+      <!-- Punjab Kings -->
+      <div class="team-card" data-team="PBKS" style="background-color:rgb(247, 180, 180);">
+        <img src="images/627d0e6c8a632ca996477ea0.png" alt="PBKS Logo" class="team-logo">
+        <h3>Punjab Kings</h3>
+        <p>Exciting cricket from an unpredictable team.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.24.07 PM.png" alt="Arshdeep Singh" class="player-image">
+        <button onclick="window.location.href='pbks.html'">View Team</button>
+      </div>
+    
+      <!-- Lucknow Super Giants -->
+      <div class="team-card" data-team="LSG" style="background-color: rgb(143, 161, 221);">
+        <img src="images/Lucknow Super Giants.png" alt="LSG Logo" class="team-logo">
+        <h3>Lucknow Super Giants</h3>
+        <p>A new team bringing flair and fresh competition.</p>
+        <img src="images/Screenshot 2024-10-27 at 11.23.04 PM.png" alt="Nicolas Pooran" class="player-image">
+        <button onclick="window.location.href='lsg.html'">View Team</button>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 IPL HUB | All Rights Reserved</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <p style="padding: 10px;font-size: larger;">🪄Made with 🤙🏻josh by <span style="font-weight: bold;">Birajit</span></p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - IPL HUB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Sora', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: linear-gradient(120deg, #002f4b, #005b79, #008aa7, #00b4d8);
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar-links a {
+      text-decoration: none;
+      color: white;
+      margin: 0 1rem;
+      font-weight: 600;
+    }
+
+    .navbar-actions a {
+      display: none; /* Removed Sign Up button */
+    }
+
+    /* Parallax Effect */
+    .parallax {
+      background-image: url("images/cdd66662-9e03-4bb2-9466-0d4465ef4777.jpeg"); /* Replace with your desired background image */
+
+    height: 500px; /* Adjust the height based on your design */
+    background-attachment: fixed;
+    background-position: center center; /* Keeps the image centered */
+    background-repeat: no-repeat;
+    background-size:contain; /* Ensures the image covers the section without stretching */
+    position: relative;
+}
+
+    /* Gradient Animation */
+    .gradient-background {
+      background: linear-gradient(45deg, #ff6f61, #6a1b9a, #0047ab, #ffb74d);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      height: 700px;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* About Section */
+    .about-section {
+      text-align: center;
+      padding: 2rem 1rem;
+      width: auto;
+      height: 700px;
+      animation: fadeIn 1s ease-out;
+      background-color: rgba(0, 0, 0, 0.5); /* Darkened background for text visibility */
+    }
+
+    .about-section h1 {
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeInText 2s ease-out forwards;
+    }
+
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeInText 2.5s ease-out forwards;
+    }
+
+    /* Slider for images */
+    .image-slider {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+      margin: 2rem 0;
+    }
+
+    .slider-track {
+      display: flex;
+      animation: slide 20s linear infinite;
+    }
+
+    .slider-track img {
+      width: 350px;
+      height: 250px;
+      margin: 0 10px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      animation: fadeInImage 3s ease-out forwards;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInText {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInImage {
+      0% { opacity: 0; transform: scale(0.8); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    footer {
+    background: linear-gradient(120deg, #002f4b, #005b79, #008aa7, #00b4d8);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar-container">
+    <div class="navbar-logo">
+        <img src="images/tata-ipl-seeklogo.png" alt="IPL HUB Logo" style="width: 40px;" />
+        <span style="font-size: 1.5rem; font-weight: bold;">IPL HUB</span>
+    </div>
+    <nav class="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#teams">Teams</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="parallax"></section> <!-- Parallax Section -->
+
+  <section class="gradient-background"> <!-- Gradient Background Section -->
+    <div class="about-section">
+      <h1>About IPL HUB</h1>
+      <p id="typewriter"></p> <!-- Typing effect will happen here -->
+      <p>IPL HUB is your one-stop destination for everything related to the Indian Premier League. Our goal is to unite fans with the thrill of IPL action and to provide insights into their favorite teams, players, and iconic moments from the tournament.</p>
+      <p>We offer a comprehensive platform where you can explore IPL news, player stats, team information, and exclusive content all in one place. Whether you're a casual fan or a die-hard supporter, IPL HUB has something for everyone!</p>
+      <div class="image-slider">
+        <div class="slider-track">
+          <img src="images/slidimg/csks.png" alt="Image 1">
+          <img src="images/slidimg/dcs.png" alt="Image 2">
+          <img src="images/slidimg/gts.png" alt="Image 3">
+          <img src="images/slidimg/kkrs.png" alt="Image 4">
+          <img src="images/slidimg/lsgs.png" alt="Image 5">
+          <img src="images/slidimg/mis.png" alt="Image 6">
+          <img src="images/slidimg/pbkss.png" alt="Image 7">
+          <img src="images/slidimg/rcbs.png" alt="Image 8">
+          <img src="images/slidimg/rrs.png" alt="Image 9">
+          <img src="images/slidimg/srhs.png" alt="Image 10">
+        </div>
+      </div>
+      <p>Join us in celebrating the spirit of cricket and the electrifying action of IPL, as we bring fans closer to the action!</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 IPL HUB | All Rights Reserved</p>
+      <p style="padding: 10px;font-size: larger;">🪄Made with 🤙🏻josh by <span style="font-weight: bold;">Birajit</span></p>
+    </div>
+  </footer>
+
+  <script>
+    const aboutText = "IPL HUB is your ultimate destination for everything related to the Indian Premier League. We unite fans, provide insights, and offer exclusive content.";
+    const typewriterElement = document.getElementById('typewriter');
+    let index = 0;
+
+    function typeWriter() {
+      if (index < aboutText.length) {
+        typewriterElement.textContent += aboutText.charAt(index);
+        index++;
+        setTimeout(typeWriter, 50); // Adjust typing speed (50ms per character)
+      }
+    }
+
+    window.onload = function() {
+      typeWriter(); // Start typing when the page loads
+    }
+  </script>
+</body>
+</html>
