@@ -25,16 +25,6 @@ This project is a feature-rich website that serves as a one-stop destination for
 
 ---
 
-## 📂 **File Structure**  
-```plaintext  
-│── index.html         # Main HTML file  
-│── styles.css         # Styling file for the website  
-│── script.js          # JavaScript file for dynamic functionality  
-│── /images            # Folder containing all media assets  
-```  
-
----
-
 ## 🚀 **Getting Started**  
 
 ### **Clone the Repository**  
