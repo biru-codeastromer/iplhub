@@ -25,24 +25,6 @@ This project is a feature-rich website that serves as a one-stop destination for
 
 ---
 
-## 🚀 **Getting Started**  
-
-### **Clone the Repository**  
-```bash  
-git clone https://github.com/your-username/ipl-hub.git  
-cd ipl-hub  
-```  
-
-### **Open the Project**  
-1. Open `index.html` in your preferred browser.  
-2. Modify `styles.css` and `script.js` to add new features or styles.  
-
----
-
-## 📜 **License**  
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the terms.  
-
----
 
 ## 💬 **Feedback and Contributions**  
 We welcome contributions and feedback! Create a pull request for any enhancements or report an issue in the repository.  
