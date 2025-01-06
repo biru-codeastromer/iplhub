@@ -25,6 +25,9 @@ This project is a feature-rich website that serves as a one-stop destination for
 
 ---
 
+## **Further Improvement**
+- **New** **Technology** will be used soon and pages will be improved as it has works left .
+
 
 ## 💬 **Feedback and Contributions**  
 We welcome contributions and feedback! Create a pull request for any enhancements or report an issue in the repository.  
